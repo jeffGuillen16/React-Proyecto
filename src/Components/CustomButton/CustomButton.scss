@@ -1,0 +1,28 @@
+// Import all Styles
+@use '../../styles/abstract/colors' as *;
+@use "../../styles/abstract/base_styles" as *;
+@import "../../responsive/mixin";
+
+// Type all styles here
+// You can also use Bootstrap
+
+// Responsive Style
+// example => @include respond(tab-port) {}
+
+// Use $primary for Blue Color
+// example 1 => background-color: $primary;
+// example 2 => background: $linear-gradient;
+
+.custombutton {
+    background: $linear-gradient;
+    width: 200px;
+    color: white;
+    border: 1px solid $primary;
+    font-size: calc($base-font-size + 0.2rem);
+    font-weight: 600;
+
+    @include respond(phone) {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

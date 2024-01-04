@@ -1,0 +1,59 @@
+// Import all Styles
+@use '../../styles/abstract/colors' as *;
+@import "../../responsive/mixin";
+
+// Type all styles here
+// You can also use Bootstrap
+
+// Responsive Style
+// example => @include respond(tab-port) {}
+
+// Use $primary for Blue Color
+// example 1 => background-color: $primary;
+// example 2 => background: $linear-gradient;
+
+.slider {
+
+    .left_arrow_box, .right_arrow_box {
+        background-color: rgba($color: $primary, $alpha: 0.3);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: $primary;
+        border: 0;
+    }
+
+    .react-multi-carousel-list {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        overflow: visible;
+        overflow-x: clip;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .item {
+        width: 250px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 5px 10px 10px #8D8D8D;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .item-selected {
+        transform: translateY(-10px);
+        box-shadow: 10px 20px 10px #5c5c5c;
+    }
+
+}

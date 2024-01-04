@@ -1,0 +1,38 @@
+// Import all Styles
+@use '../../styles/abstract/colors' as *;
+@use "../../styles/abstract/base_styles" as *;
+@import "../../responsive/mixin";
+
+// Type all styles here
+// You can also use Bootstrap
+
+// Responsive Style
+// example => @include respond(tab-port) {}
+
+// Use $primary for Blue Color
+// example 1 => background-color: $primary;
+// example 2 => background: $linear-gradient;
+
+.playbutton {
+    background-color: transparent;
+    border: 0;
+    // font-size: 1rem;
+    font-weight: 600;
+    width: 250px;
+
+    .btn_play {
+        background: $linear-gradient;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        padding: 26%;
+
+        .icon {
+            margin-left: 3px;
+        }
+    }
+
+    .play_name {
+        font-size: calc($base-font-size + 0.3rem);
+    }
+}

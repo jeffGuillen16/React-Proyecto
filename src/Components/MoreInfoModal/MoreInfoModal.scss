@@ -1,0 +1,73 @@
+// Import all Styles
+@use '../../styles/abstract/colors' as *;
+@use "../../styles/abstract/base_styles" as *;
+@import "../../responsive/mixin";
+
+// Type all styles here
+// You can also use Bootstrap
+
+// Responsive Style
+// example => @include respond(tab-port) {}
+
+// Use $primary for Blue Color
+// example 1 => background-color: $primary;
+// example 2 => background: $linear-gradient;
+
+.moreinfomodal {
+
+    .modal-dialog {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .top_title {
+            background-color: $primary;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .info_details {
+            
+            .img_box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                .my_img {
+                    width: 100%;
+                    max-width: 800px;
+                    // min-width: 400px;
+                }
+            }
+            
+            .details {
+                margin: 20px 0px;
+                border-radius: 10px;
+                padding: 20px 0px;
+                background-color: #F2F4F8;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .step {
+                    // font-size: calc($base-font-size + 0.4rem);
+                    font-weight: 700;
+                }
+
+                p {
+                    text-align: center;
+                    max-width: 1000px;
+                    font-weight: 600;
+
+                    @include respond(phone) {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+}

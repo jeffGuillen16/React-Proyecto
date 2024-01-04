@@ -1,0 +1,14 @@
+// Navigation.scss
+@use "../../styles/abstract/colors" as *;
+@use "../../styles/abstract/base_styles" as *;
+@import "../../responsive/mixin";
+
+// Type all styles here
+// You can also use Bootstrap
+
+// Responsive Style
+// example => @include respond(tab-port) {}
+
+// Use $primary for Blue Color
+// example 1 => background-color: $primary;
+// example 2 => background: $linear-gradient;
