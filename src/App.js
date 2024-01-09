@@ -35,14 +35,6 @@ function App() {
         {/* <Route path="/project/:projectId" element={<ProjectPage />} /> */}
       </Routes>
       <Footer />
-      <div className="d-flex align-items-center justify-content-center bottom_co">
-        <button
-          onClick={() => window.open("")}
-          className="btn px-1 my_links"
-        >
-          Tienda Virtual
-        </button>
-      </div>
     </div>
   );
 }
