@@ -1,5 +1,8 @@
 // Gallery.js
 import "./Gallery.scss";
-function Gallery() {}
+function Gallery() {
+    
+
+}
 
 export default Gallery;
