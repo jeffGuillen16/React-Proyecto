@@ -1,5 +1,5 @@
 // Don't touch this file
-export const navigation_data = [
+/*export const navigation_data = [
     {
         id: "home",
         title: "Home",
@@ -17,3 +17,4 @@ export const navigation_data = [
         title: "Team",
     },
 ];
+*/

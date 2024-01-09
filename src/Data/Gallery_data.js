@@ -1,5 +1,5 @@
 // Don't touch this file
-export const gallery_data = [
+/*export const gallery_data = [
     {
         id: 1,
         name: "General Rodriguez",
@@ -31,3 +31,4 @@ export const gallery_data = [
         images: "https://t3.ftcdn.net/jpg/01/86/53/12/360_F_186531267_4Q8uw3z9Mf2XNWuazPismDtQswjGzwfu.jpg",
     },
 ];
+*/
