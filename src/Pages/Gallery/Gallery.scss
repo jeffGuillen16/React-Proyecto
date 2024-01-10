@@ -207,3 +207,31 @@
 //         }
 //     }
 // }
+.gallery{
+    // Estilos para tu contenedor de galería
+    background-color: #dac0c0;
+    height: 100vh;
+    // Agrega más estilos según sea necesario
+    display: flex;
+    flex-direction: row;
+}
+.caja{
+    height: 100%;
+    background-color: #9fe9a9;
+}
+.caja1{
+    height: 100%;
+    background-color: #dcdff3;
+    display: flex;
+    flex-direction: column;
+}
+.caja1-1{
+    height: 50%;
+    background-color: #385c3d;
+    display: flex;
+    flex-direction:row;
+}
+.caja1-1-1{
+    height: 100%;
+    background-color: rgb(82, 61, 61);
+}
