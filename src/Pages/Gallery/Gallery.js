@@ -7,9 +7,14 @@ import foto5 from "../../assets/Gallery/foto5.png";
 import foto6 from "../../assets/Gallery/foto6.png";
 import carousel from "../../assets/Gallery/carusel.png";
 import BotonMas from "../../assets/Gallery/botones/boton_mas.svg";
-import PlayButton from "../../Components/PlayButton/PlayButton.js";
+import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
 
 function Gallery() {
+  const handleBotonClick = (imagen) => {
+    // Lógica a ejecutar cuando se hace clic en el botón en una imagen específica
+    console.log(`Botón en ${imagen} clicado`);
+    // Puedes hacer cualquier otra cosa aquí...
+  };
     return (
         <div className="col-sm-12 gallery">
           {/* Aqui va el carousel  */}
@@ -47,8 +52,10 @@ function Gallery() {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
-                <PlayButton
-                  icon={BotonMas}
+                <BotonMasC
+                  imgSrc={BotonMas} // Ruta de la imagen normal
+                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
               <div className="col-sm 4 caja1-1-1" style={{
