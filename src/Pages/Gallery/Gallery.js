@@ -6,7 +6,7 @@ import foto4 from "../../assets/Gallery/foto4.png";
 import foto5 from "../../assets/Gallery/foto5.png";
 import foto6 from "../../assets/Gallery/foto6.png";
 import carousel from "../../assets/Gallery/carusel.png";
-import BotonMas from "../../assets/Gallery/botones/boton_mas.svg";
+import BotonMas from "../../assets/Gallery/botones//boton_mas.svg";
 import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
 
 function Gallery() {
@@ -69,6 +69,11 @@ function Gallery() {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
+                  <BotonMasC
+                  imgSrc={BotonMas} // Ruta de la imagen normal
+                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
+                />
               </div>
             </div>
             <div className="col-sm-12 caja1-1">
@@ -83,6 +88,11 @@ function Gallery() {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
+                  <BotonMasC
+                  imgSrc={BotonMas} // Ruta de la imagen normal
+                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
+                />
               </div>
               <div className="col-sm 4 caja1-1-1" style={{
                 backgroundImage: `url(${foto6})`,backgroundSize: 'cover',
