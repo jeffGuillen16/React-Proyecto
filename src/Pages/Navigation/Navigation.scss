@@ -2,7 +2,6 @@
 @use "../../styles/abstract/colors" as *;
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
-
 // Type all styles here
 // You can also use Bootstrap
 
@@ -12,3 +11,11 @@
 // Use $primary for Blue Color
 // example 1 => background-color: $primary;
 // example 2 => background: $linear-gradient;
+.Navigation{
+    position: fixed;
+	width: 100%;
+	z-index: 99;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
