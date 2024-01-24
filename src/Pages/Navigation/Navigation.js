@@ -8,25 +8,56 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const NavigationBar = () => {
   return (
     <div className="Navigation">
-      <nav className="row align-items-center">
-        <div class="col-sm-2">
-          <div className="d-flex justify-content-around align-items-center">
-            <FontAwesomeIcon
-              icon={["fa-bars", icons.BurgerMenu]}
-              size="2x"
-              className="brand-logo"
-            />
-            <img src={logo} className="logo" alt="logo" />
-          </div>
+      <nav className="row">
+        <div className="col-sm-2 d-flex justify-content-around align-items-center">
+          <FontAwesomeIcon
+            icon={["fa-bars", icons.BurgerMenu]}
+            size="lg"
+            className="brand-logo"
+          />
+          <img
+            src={logo}
+            className="logo"
+            alt="logo"
+            style={{ width: "55px", height: "55px" }}
+          />
         </div>
-        <div class="col-sm">Productos</div>
-        <div class="col-sm">Ilustradores</div>
-        <div class="col-sm">Colecciones</div>
-        <div class="col-sm">Sobre Nosotros</div>
-        <div class="col-sm-5">icon buscador</div>
+        <div className="col">
+          PRODUCTOS
+          <FontAwesomeIcon
+            icon={["fa-chevron", icons.chevronDown]}
+            size="lg"
+            className="brand-logo fa-chevron" // Añadí la clase específica para el ícono de chevron
+          />
+        </div>
+        <div className="col">
+          CONTACTO
+          <FontAwesomeIcon
+            icon={["fa-chevron", icons.chevronDown]}
+            size="lg"
+            className="brand-logo fa-chevron" // Añadí la clase específica para el ícono de chevron
+          />
+        </div>
+        <div className="col-sm-2">
+          PREGUNTAS FRECUENTES
+          <FontAwesomeIcon
+            icon={["fa-chevron", icons.chevronDown]}
+            size="lg"
+            className="brand-logo fa-chevron" // Añadí la clase específica para el ícono de chevron
+          />
+        </div>
+        <div className="col-sm-2">QUIENES SOMOS</div>
+        <div className="col-sm-3">
+          <FontAwesomeIcon
+            icon={["fa-bars", icons.MagnifyingGlass]}
+            size="lg"
+            className="brand-logo"
+          />
+        </div>
       </nav>
     </div>
   );
 };
 
 export default NavigationBar;
+
