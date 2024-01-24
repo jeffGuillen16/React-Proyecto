@@ -8,25 +8,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const NavigationBar = () => {
   return (
     <div className="Navigation">
-      <nav className="row align-items-center">
-        <div class="col-sm-2">
-          <div className="d-flex justify-content-around align-items-center">
-            <FontAwesomeIcon
-              icon={["fa-bars", icons.BurgerMenu]}
-              size="2x"
-              className="brand-logo"
-            />
-            <img src={logo} className="logo" alt="logo" />
-          </div>
+      <nav className="row">
+        <div className="col-sm-2 d-flex justify-content-around align-items-center">
+          <FontAwesomeIcon
+            icon={["fa-bars", icons.BurgerMenu]}
+            size="lg"
+            className="brand-logo"
+          />
+        <img src={logo} className="logo" alt="logo" style={{ width: '55px', height: '55px' }} />
         </div>
-        <div class="col-sm">Productos</div>
-        <div class="col-sm">Ilustradores</div>
-        <div class="col-sm">Colecciones</div>
-        <div class="col-sm">Sobre Nosotros</div>
-        <div class="col-sm-5">icon buscador</div>
+        <div className="col-sm">Productos</div>
+        <div className="col-sm">Ilustradores</div>
+        <div className="col-sm">Colecciones</div>
+        <div className="col-sm">Nosotros</div>
+        <div className="col-sm-4">
+        <FontAwesomeIcon
+            icon={["fa-bars", icons.MagnifyingGlass]}
+            size="lg"
+            className="brand-logo"
+          />
+
+        </div>
       </nav>
     </div>
   );
 };
 
 export default NavigationBar;
+

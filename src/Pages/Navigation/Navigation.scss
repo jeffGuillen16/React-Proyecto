@@ -2,20 +2,36 @@
 @use "../../styles/abstract/colors" as *;
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
-// Type all styles here
-// You can also use Bootstrap
 
-// Responsive Style
-// example => @include respond(tab-port) {}
+.Navigation {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
-// Use $primary for Blue Color
-// example 1 => background-color: $primary;
-// example 2 => background: $linear-gradient;
-.Navigation{
-    position: fixed;
-	width: 100%;
-	z-index: 99;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
+  .col-sm-2 {
+    padding: 0;
+    margin: 0;
+    height: 60px; // Establece la altura deseada para el logo
+    display: flex;
+    align-items: center; // Centra el contenido verticalmente
+  }
+  .col-sm{
+	margin-left: 30px;
+  }
+  nav {
+    padding: 0px 20px;
+	background-color: $light-success;
+  }
+
+  nav > div {
+    border-right: 1px solid $light-success-30; /* Línea divisoria vertical */
+    height: 60px; // Establece la misma altura para todas las demás columnas
+    display: flex;
+    align-items: center; // Centra el contenido verticalmente
+  }
+
+  nav > div:last-child {
+    border-right: none;
+  }
 }
