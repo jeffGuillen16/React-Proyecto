@@ -21,7 +21,7 @@ const NavigationBar = () => {
         <div className="col-sm">Ilustradores</div>
         <div className="col-sm">Colecciones</div>
         <div className="col-sm">Nosotros</div>
-        <div className="col-sm-4">
+        <div className="col-sm-5">
         <FontAwesomeIcon
             icon={["fa-bars", icons.MagnifyingGlass]}
             size="lg"
