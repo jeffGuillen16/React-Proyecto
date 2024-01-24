@@ -15,14 +15,15 @@
     display: flex;
     align-items: center;
   }
-  .col,
-  .fa-bars,
-  .col-sm-2 {
+
+  .logo {
+    cursor: auto; // Desactiva el cursor pointer para el logo
+  }
+
+  .col-sm, .fa-bars, .col-sm-2 , .col-sm-5{
     cursor: pointer;
   }
-  .logo {
-    cursor: auto;
-  }
+
   nav {
     padding: 0px 20px;
     background-color: $light-success;
@@ -38,9 +39,9 @@
     border-right: none;
   }
 
-  
+  // Estilos específicos para el ícono de chevron
   .fa-chevron {
-    font-weight: 3px; 
-    margin-left: 10px;
+    font-weight: 300; // Ajusta el grosor según tus preferencias
+    margin-left: 10px; // Ajusta el margen izquierdo según tus preferencias
   }
 }

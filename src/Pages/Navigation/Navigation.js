@@ -15,44 +15,19 @@ const NavigationBar = () => {
             size="lg"
             className="brand-logo"
           />
-          <img
-            src={logo}
-            className="logo"
-            alt="logo"
-            style={{ width: "55px", height: "55px" }}
-          />
+        <img src={logo} className="logo" alt="logo" style={{ width: '55px', height: '55px' }} />
         </div>
-        <div className="col">
-          PRODUCTOS
-          <FontAwesomeIcon
-            icon={["fa-chevron", icons.chevronDown]}
-            size="lg"
-            className="brand-logo fa-chevron" // Añadí la clase específica para el ícono de chevron
-          />
-        </div>
-        <div className="col">
-          CONTACTO
-          <FontAwesomeIcon
-            icon={["fa-chevron", icons.chevronDown]}
-            size="lg"
-            className="brand-logo fa-chevron" // Añadí la clase específica para el ícono de chevron
-          />
-        </div>
-        <div className="col-sm-2">
-          PREGUNTAS FRECUENTES
-          <FontAwesomeIcon
-            icon={["fa-chevron", icons.chevronDown]}
-            size="lg"
-            className="brand-logo fa-chevron" // Añadí la clase específica para el ícono de chevron
-          />
-        </div>
-        <div className="col-sm-2">QUIENES SOMOS</div>
-        <div className="col-sm-3">
-          <FontAwesomeIcon
+        <div className="col-sm">PRODUCTOS</div>
+        <div className="col-sm">ILUSTRADORES</div>
+        <div className="col-sm">COLECCIONES</div>
+        <div className="col-sm">NOSOTROS</div>
+        <div className="col-sm-5">
+        <FontAwesomeIcon
             icon={["fa-bars", icons.MagnifyingGlass]}
             size="lg"
             className="brand-logo"
           />
+
         </div>
       </nav>
     </div>
@@ -60,3 +35,4 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
