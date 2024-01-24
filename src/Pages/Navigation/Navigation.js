@@ -17,10 +17,10 @@ const NavigationBar = () => {
           />
         <img src={logo} className="logo" alt="logo" style={{ width: '55px', height: '55px' }} />
         </div>
-        <div className="col-sm">Productos</div>
-        <div className="col-sm">Ilustradores</div>
-        <div className="col-sm">Colecciones</div>
-        <div className="col-sm">Nosotros</div>
+        <div className="col-sm">PRODUCTOS</div>
+        <div className="col-sm">ILUSTRADORES</div>
+        <div className="col-sm">COLECCIONES</div>
+        <div className="col-sm">NOSOTROS</div>
         <div className="col-sm-5">
         <FontAwesomeIcon
             icon={["fa-bars", icons.MagnifyingGlass]}
