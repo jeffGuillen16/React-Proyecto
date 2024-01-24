@@ -13,21 +13,52 @@ const NavigationBar = () => {
           <FontAwesomeIcon
             icon={["fa-bars", icons.BurgerMenu]}
             size="lg"
-            className="brand-logo"
+            className="brand-menu"
           />
-        <img src={logo} className="logo" alt="logo" style={{ width: '55px', height: '55px' }} />
+          <img
+            src={logo}
+            className="brand-logo"
+            alt="logo"
+            style={{ width: "55px", height: "55px", cursor: "auto" }}
+          />
         </div>
-        <div className="col-sm">PRODUCTOS</div>
-        <div className="col-sm">ILUSTRADORES</div>
-        <div className="col-sm">COLECCIONES</div>
+        <div className="col-sm">
+          PRODUCTOS
+          <FontAwesomeIcon
+            icon={["fa-chevron-down", icons.chevronDown]}
+            size="lg"
+            className="brand-chevron"
+          />{" "}
+        </div>
+        <div className="col-sm">
+          ILUSTRADORES
+          <FontAwesomeIcon
+            icon={["fa-chevron-down", icons.chevronDown]}
+            size="lg"
+            className="brand-chevron"
+          />
+        </div>
+        <div className="col-sm">
+          COLECCIONES
+          <FontAwesomeIcon
+            icon={["fa-chevron-down", icons.chevronDown]}
+            size="lg"
+            className="brand-chevron"
+          />
+        </div>
         <div className="col-sm">NOSOTROS</div>
-        <div className="col-sm-5">
-        <FontAwesomeIcon
+        <div className="col-sm-4">
+          <FontAwesomeIcon
             icon={["fa-bars", icons.MagnifyingGlass]}
             size="lg"
             className="brand-logo"
           />
-
+          <div className="shopping">CARRITO/$0
+          <FontAwesomeIcon
+            icon={["fa-cart-shopping", icons.faCartShopping]}
+            size="lg"
+          />
+        </div>
         </div>
       </nav>
     </div>
@@ -35,4 +66,3 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
-

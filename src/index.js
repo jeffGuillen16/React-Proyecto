@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { faArrowUpRightFromSquare, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare, faBars , faChevronDown,faCartShopping} from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { BrowserRouter } from "react-router-dom";
 import { fab, faFacebook, faInstagram, faTiktok, faWhatsapp, faFacebookF } from "@fortawesome/free-brands-svg-icons";
@@ -42,7 +42,9 @@ library.add(
     faCaretUp,
     faBars,
     faFacebookF,
-    faArrowUpRightFromSquare
+    faArrowUpRightFromSquare,
+    faChevronDown,
+    faCartShopping
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

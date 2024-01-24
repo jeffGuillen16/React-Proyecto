@@ -17,4 +17,7 @@ export const icons = {
     Envelope: "fa-envelope",
     BurgerMenu: "fa-bars",
     ArrowUpRightFromSquare: "fa-arrow-up-right-from-square",
+    chevronDown:"fa-chevron-down",
+    faCartShopping: "fa-cart-shopping"
+
 };
