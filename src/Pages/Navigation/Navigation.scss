@@ -56,6 +56,43 @@
   }
 
   .shopping {
-    margin-left: 10rem;
+    margin-left: 12rem;
+    cursor: pointer;
+    &:hover {
+      color: $light-success-30;
+    }
+  }
+
+  .menu {
+    width: 17%;
+    position: fixed;
+    top: 1;
+    z-index: 1000;
+    margin: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid $dark-text-60;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+    background-color: #fff;
+    span {
+      font-weight: 400;
+    }
+
+    .menu-items {
+      cursor: pointer;
+      &:hover {
+        background-color: $light-success;
+      }
+    }
+    
+    .menu-items > span {
+      margin: 3px;
+    }
+
+    &.menu-open {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
