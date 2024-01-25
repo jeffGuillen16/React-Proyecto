@@ -66,15 +66,15 @@
   .menu {
     width: 17%;
     position: fixed;
-    top: 1;
     z-index: 1000;
-    margin: 5px 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 2px solid $dark-text-60;
+    border: 0px 0px 1px 0px solid $dark-text-60;
+    margin:0px;
+    padding: 0px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s, opacity 0.3s;
-    background-color: #fff;
+    background-color: $light-success;
     span {
       font-weight: 400;
     }
@@ -82,12 +82,12 @@
     .menu-items {
       cursor: pointer;
       &:hover {
-        background-color: $light-success;
+        background-color: $light-success-30;
       }
     }
     
     .menu-items > span {
-      margin: 3px;
+      padding: 5px;
     }
 
     &.menu-open {
