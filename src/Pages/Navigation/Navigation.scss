@@ -1,9 +1,13 @@
+// Navigation.scss
 @use "../../styles/abstract/colors" as *;
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
 
 .Navigation {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -16,9 +20,17 @@
     align-items: center;
   }
 
-  .col-sm,
+  .col-sm > span,
+  .fa-magnifying-glass,
+  .fa-bars {
+    &:hover {
+      color: $light-success-30;
+    }
+  }
+
+  .col-sm > span,
   .fa-bars,
-  .col-sm-2,
+  .fa-magnifying-glass,
   .col-sm-5 {
     cursor: pointer;
   }
@@ -38,10 +50,12 @@
     border-right: none;
   }
   .fa-chevron-down {
-    font-weight: 300; 
-    margin-left: 20px;  
+    margin-left: 8px;
+    font-size: 1rem;
+    cursor: pointer;
   }
-  .shopping{
-    margin-left:rem ;
+
+  .shopping {
+    margin-left: 10rem;
   }
 }
