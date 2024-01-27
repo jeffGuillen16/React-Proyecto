@@ -1,7 +1,8 @@
 import "./Gallery.scss";
-import BotonMas from "../../assets/Gallery/botones//boton_mas.svg";
 import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
 import imagenes from "../../Data/Gallery/imagenes.js";
+
+
 function Gallery() {
   const handleBotonClick = (imagen) => {
     // Lógica a ejecutar cuando se hace clic en el botón en una imagen específica
@@ -49,8 +50,8 @@ function Gallery() {
                 backgroundPosition: 'center'}}
                 >
                 <BotonMasC
-                  imgSrc={BotonMas} // Ruta de la imagen normal
-                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  imgSrc={imagenes.botonMas} // Ruta de la imagen normal
+                  imgSrcClicked={imagenes.botonMas}  // Ruta de la imagen clicada
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
@@ -66,8 +67,8 @@ function Gallery() {
                 backgroundPosition: 'center'}}
                 >
                   <BotonMasC
-                  imgSrc={BotonMas} // Ruta de la imagen normal
-                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  imgSrc={imagenes.botonMas} // Ruta de la imagen normal
+                  imgSrcClicked={imagenes.botonMas}  // Ruta de la imagen clicada
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
@@ -85,8 +86,8 @@ function Gallery() {
                 backgroundPosition: 'center'}}
                 >
                   <BotonMasC
-                  imgSrc={BotonMas} // Ruta de la imagen normal
-                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  imgSrc={imagenes.botonMas} // Ruta de la imagen normal
+                  imgSrcClicked={imagenes.botonMas}  // Ruta de la imagen clicada
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
