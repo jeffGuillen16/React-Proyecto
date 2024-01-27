@@ -1,7 +1,7 @@
 import "./Gallery.scss";
 import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
 import imagenes from "../../Data/Gallery/imagenes.js";
-
+import NavFloat from "../../Components/NavFloat/NavFloat.js";
 
 function Gallery() {
   const handleBotonClick = (imagen) => {
@@ -13,7 +13,9 @@ function Gallery() {
   
 
     return (
+       
         <div className="col-sm-12 gallery">
+          <NavFloat/>
           {/* Aqui va el carousel  */}
           <div className="col-sm-5 caja">
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -41,8 +43,9 @@ function Gallery() {
               </button>
             </div>
           </div>
-          {/* Aqui va la tabla de 6 fotos   */}
+          {/* Aqui va la contenedor de  las 6 fotos   */}
           <div className="col-sm-7 caja1">
+            {/* Aqui va la primera fila    */}
             <div className="col-sm-12 caja1-1">
             <div className="col-sm 4 caja1-1-1" style={{
                 backgroundImage: `url(${imagenes.foto1})`,backgroundSize: 'cover',
@@ -73,6 +76,7 @@ function Gallery() {
                 />
               </div>
             </div>
+             {/* Aqui va la segunda fila   */}        
             <div className="col-sm-12 caja1-1">
               <div className="col-sm 4 caja1-1-1" style={{
                 backgroundImage: `url(${imagenes.foto4})`,backgroundSize: 'cover',
