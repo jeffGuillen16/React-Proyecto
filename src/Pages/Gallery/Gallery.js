@@ -1,11 +1,7 @@
 import "./Gallery.scss";
-import foto1 from "../../assets/Gallery/foto1.png";
-import React from "react";
-import foto2 from "../../assets/Gallery/foto2.png";
-import carousel from "../../assets/Gallery/carusel.png";
 import BotonMas from "../../assets/Gallery/botones//boton_mas.svg";
 import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
-import {gallery_data} from "../../Data/Gallery/imagenes.js";
+import imagenes from "../../Data/Gallery/imagenes.js";
 function Gallery() {
   const handleBotonClick = (imagen) => {
     // Lógica a ejecutar cuando se hace clic en el botón en una imagen específica
@@ -13,6 +9,8 @@ function Gallery() {
     // Puedes hacer cualquier otra cosa aquí...
   };
   
+  
+
     return (
         <div className="col-sm-12 gallery">
           {/* Aqui va el carousel  */}
@@ -25,13 +23,13 @@ function Gallery() {
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src={carousel} alt="Los Angeles" class="d-block w-100"/>
+                  <img src={imagenes.foto1} alt="Los Angeles" class="d-block w-100"/>
                 </div>
                 <div class="carousel-item">
-                  <img src={foto1} alt="Chicago" class="d-block w-100"/>
+                  <img src={imagenes.foto2} alt="Chicago" class="d-block w-100"/>
                 </div>
                 <div class="carousel-item">
-                  <img src={foto2} alt="New York" class="d-block w-100"/>
+                  <img src={imagenes.foto3} alt="New York" class="d-block w-100"/>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
@@ -45,9 +43,8 @@ function Gallery() {
           {/* Aqui va la tabla de 6 fotos   */}
           <div className="col-sm-7 caja1">
             <div className="col-sm-12 caja1-1">
-            {gallery_data.map((imagen, index) => (
-              <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${imagen.src})`,backgroundSize: 'cover',
+            <div className="col-sm 4 caja1-1-1" style={{
+                backgroundImage: `url(${imagenes.foto1})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
@@ -57,18 +54,14 @@ function Gallery() {
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
-              ))}
-              {gallery_data.map((imagen, index) => (
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${imagen[1]})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto2})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
               </div>
-              ))}
-              {gallery_data.map((imagen, index) => (
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${imagen[2]})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto3})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
@@ -78,20 +71,16 @@ function Gallery() {
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
-              ))}
             </div>
             <div className="col-sm-12 caja1-1">
-            {gallery_data.map((imagen, index) => (
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${imagen[3]})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto4})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
               </div>
-            ))}
-              {gallery_data.map((imagen, index) => (
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${imagen[4]})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto5})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
@@ -101,15 +90,13 @@ function Gallery() {
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
-              ))}
-              {gallery_data.map((imagen, index) => (
+              
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${imagen[5]})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto6})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
               </div>
-              ))}
             </div>
           </div>
         </div>

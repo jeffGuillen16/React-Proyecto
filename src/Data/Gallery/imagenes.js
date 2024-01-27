@@ -1,8 +1,16 @@
-export const gallery_data=[
-    { "id": 1, "nombre": "foto1", "src": "../../assets/Gallery/foto1.png" },
-    { "id": 2, "nombre": "foto2", "src": "../../assets/Gallery/foto2" },
-    { "id": 3, "nombre": "foto3", "src": "../../assets/Gallery/foto3" },
-    { "id": 4, "nombre": "foto4", "src": "../../assets/Gallery/foto4" },
-    { "id": 5, "nombre": "foto5", "src": "../../assets/Gallery/foto5" },
-    { "id": 6, "nombre": "foto6", "src": "../../assets/Gallery/foto6" }
-]
+import foto1 from "../../assets/Gallery/foto1.png";
+import foto2 from "../../assets/Gallery/foto2.png";
+import foto3 from "../../assets/Gallery/foto3.png";
+import foto4 from "../../assets/Gallery/foto4.png";
+import foto5 from "../../assets/Gallery/foto5.png";
+import foto6 from "../../assets/Gallery/foto6.png";
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {
+    "foto1":foto1,
+    "foto2":foto2,
+    "foto3":foto3,
+    "foto4":foto4,
+    "foto5":foto5,
+    "foto6":foto6
+}
