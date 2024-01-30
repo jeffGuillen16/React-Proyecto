@@ -3,6 +3,7 @@ import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
 import imagenes from "../../Data/Gallery/imagenes.js";
 import NavFloat from "../../Components/NavFloat/NavFloat.js";
 
+
 function Gallery() {
   const handleBotonClick = (imagen) => {
     // Lógica a ejecutar cuando se hace clic en el botón en una imagen específica
@@ -13,12 +14,13 @@ function Gallery() {
   
 
     return (
-       
-        <div className="col-sm-12 gallery">
-          <NavFloat/>
-          {/* Aqui va el carousel  */}
-          <div className="col-sm-5 caja">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      
+      <div className="gallery" >
+          <div className="caja col-sm-5">
+            {/* Aqui va el nav vertical de botones  */}
+            <NavFloat/>
+            {/* Aqui va el carousel  */}
+            <div id="demo" class="carousel " data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -104,7 +106,8 @@ function Gallery() {
               </div>
             </div>
           </div>
-        </div>
+      
+      </div>
       );
 
 }
