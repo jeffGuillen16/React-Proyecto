@@ -2,15 +2,14 @@
 .gallery{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     position: relative;
     box-sizing: border-box; 
-    
+    padding-top: 9.5vh;
 }
     
 .caja{
-
     height: 100%;
     display: flex;
     flex-direction: column;
