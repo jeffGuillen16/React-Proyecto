@@ -1,37 +1,75 @@
-
-.gallery{
-    display: flex;
-    flex-direction: row;
-    height: 130vh;
-    width: 100%;
-    position: relative;
-    box-sizing: border-box; 
-    padding-top: 9.5vh;
+@use "../../styles/abstract/colors" as *;
+@use "../../styles/abstract/base_styles" as *;
+@import "../../responsive/mixin";
+.gallery {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 3rem;
 }
-    
-.caja{
-    height: 100%;
+
+.caja {
     display: flex;
     flex-direction: column;
+    position: relative; /* Agregamos position relative al contenedor padre */
+  
+    .navFloat {
+      background-color: #00000042;
+      z-index: 1;
+      width: 3rem;
+      height: 22rem;
+      position: fixed;
+      top: 50%; /* Centramos verticalmente en relación con el contenedor padre */
+      transform: translateY(-50%); /* Ajustamos verticalmente */
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      overflow: hidden;
+  
+      .icon {
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+  
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+  }
+  
+
+.caja1 {
+  display: flex;
+  flex-direction: column;
 }
 
-.caja1{
+.caja1-1 {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
 
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.caja1-1-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.caja1-1{
-    height: 50%;
-    display: flex;
-    flex-direction:row;
+
+#demo {
+  height: 100%;
 }
-.caja1-1-1{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-#demo{
-    height: 100%;
-}
+
+// Estilos del nav float Facebook, Whatsapp, Instagram y Tiktok
+
+ 
+
