@@ -36,7 +36,7 @@ const NavigationBar = () => {
           />
         </div>
         <div className="col-sm">
-        <BasicExample></BasicExample>
+          <BasicExample></BasicExample>
         </div>
         <div className="col-sm">
           <span>ILUSTRADORES</span>
@@ -93,10 +93,10 @@ const NavigationBar = () => {
         </div>
         <div className="menu-items">
           <span>¿Querés trabajar con nosotros?</span>
-        </div>b
+        </div>
+        b
       </div>
     </div>
-    
   );
 };
 
