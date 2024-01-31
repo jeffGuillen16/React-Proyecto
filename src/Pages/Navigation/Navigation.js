@@ -92,7 +92,7 @@ const NavigationBar = () => {
         </div>
         <div className="menu-items">
           <span>¿Querés trabajar con nosotros?</span>
-        </div>
+        </div>b
       </div>
     </div>
   );
