@@ -19,15 +19,16 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation />
+      <Navigation />    
       <Routes>
         <Route
           path="/"
           element={
             <Suspense fallback={<div>Loading...</div>}>
+              <Gallery />
               <Hero />
               <Projects selected={selected} setSelected={setSelected} />
-              <Gallery />
+              
               <Team />
             </Suspense>
           }
