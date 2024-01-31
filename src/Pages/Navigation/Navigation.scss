@@ -2,7 +2,8 @@
 @use "../../styles/abstract/colors" as *;
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
-
+/* The following line can be included in a src/App.scss */
+@import '~bootstrap/scss/bootstrap';
 .Navigation {
   width: 100%;
   position: fixed;

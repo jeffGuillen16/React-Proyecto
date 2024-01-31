@@ -4,6 +4,7 @@ import "./Navigation.scss";
 import logo from "../../assets/Navigation/logo.png";
 import { icons } from "../../Data/Icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import BasicExample from "../../Components/DropDown/BasicExample.js";
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,12 +36,7 @@ const NavigationBar = () => {
           />
         </div>
         <div className="col-sm">
-          <span>PRODUCTOS</span>
-          <FontAwesomeIcon
-            icon={["fa-chevron-down", icons.chevronDown]}
-            size="lg"
-            className="brand-chevron"
-          />
+        <BasicExample></BasicExample>
         </div>
         <div className="col-sm">
           <span>ILUSTRADORES</span>
@@ -76,11 +72,7 @@ const NavigationBar = () => {
           </div>
         </div>
       </nav>
-      <div
-        className={`menu ${isMenuOpen ? "menu-open" : ""}`}
-        onMouseEnter={handleBurgerMenuHover}
-        onMouseLeave={handleBurgerMenuLeave}
-      >
+      <div className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
         <div className="menu-items">
           <span>Ofertas</span>
         </div>
@@ -104,6 +96,7 @@ const NavigationBar = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

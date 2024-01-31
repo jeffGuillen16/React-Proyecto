@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { faArrowUpRightFromSquare, faBars , faChevronDown,faCartShopping} from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { BrowserRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { fab, faFacebook, faInstagram, faTiktok, faWhatsapp, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import {
     faClock,
