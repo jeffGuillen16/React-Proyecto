@@ -8,19 +8,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleBurgerMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const handleBurgerMenuHover = () => {
+    setIsMenuOpen(true);
+  };
+
+  const handleBurgerMenuLeave = () => {
+    setIsMenuOpen(false);
   };
 
   return (
-    <div className={`Navigation ${isMenuOpen ? "menu-open" : ""}`}>
+    <div className={"Navigation"}>
       <nav className="row">
         <div className="col-sm-2 d-flex justify-content-around align-items-center">
           <FontAwesomeIcon
             icon={["fa-bars", icons.BurgerMenu]}
             size="lg"
-            className="brand-menu"
-            onClick={handleBurgerMenuClick}
+            className={`brand-menu ${isMenuOpen ? "menu-open" : ""}`}
+            onMouseEnter={handleBurgerMenuHover}
+            onMouseLeave={handleBurgerMenuLeave}
           />
           <img
             src={logo}
@@ -71,7 +76,11 @@ const NavigationBar = () => {
           </div>
         </div>
       </nav>
-      <div className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
+      <div
+        className={`menu ${isMenuOpen ? "menu-open" : ""}`}
+        onMouseEnter={handleBurgerMenuHover}
+        onMouseLeave={handleBurgerMenuLeave}
+      >
         <div className="menu-items">
           <span>Ofertas</span>
         </div>
