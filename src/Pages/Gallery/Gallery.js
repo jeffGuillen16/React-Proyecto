@@ -1,13 +1,7 @@
 import "./Gallery.scss";
-import foto1 from "../../assets/Gallery/foto1.png";
-import foto2 from "../../assets/Gallery/foto2.png";
-import foto3 from "../../assets/Gallery/foto3.png";
-import foto4 from "../../assets/Gallery/foto4.png";
-import foto5 from "../../assets/Gallery/foto5.png";
-import foto6 from "../../assets/Gallery/foto6.png";
-import carousel from "../../assets/Gallery/carusel.png";
-import BotonMas from "../../assets/Gallery/botones//boton_mas.svg";
 import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
+import imagenes from "../../Data/Gallery/imagenes.js";
+import NavFloat from "../../Components/NavFloat/NavFloat.js";
 
 function Gallery() {
   const handleBotonClick = (imagen) => {
@@ -15,8 +9,13 @@ function Gallery() {
     console.log(`Botón en ${imagen} clicado`);
     // Puedes hacer cualquier otra cosa aquí...
   };
+  
+  
+
     return (
+       
         <div className="col-sm-12 gallery">
+          <NavFloat/>
           {/* Aqui va el carousel  */}
           <div className="col-sm-5 caja">
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -27,13 +26,13 @@ function Gallery() {
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src={carousel} alt="Los Angeles" class="d-block w-100"/>
+                  <img src={imagenes.foto1} alt="Los Angeles" class="d-block w-100"/>
                 </div>
                 <div class="carousel-item">
-                  <img src={foto1} alt="Chicago" class="d-block w-100"/>
+                  <img src={imagenes.foto2} alt="Chicago" class="d-block w-100"/>
                 </div>
                 <div class="carousel-item">
-                  <img src={foto2} alt="New York" class="d-block w-100"/>
+                  <img src={imagenes.foto3} alt="New York" class="d-block w-100"/>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
@@ -44,58 +43,61 @@ function Gallery() {
               </button>
             </div>
           </div>
-          {/* Aqui va la tabla de 6 fotos   */}
+          {/* Aqui va la contenedor de  las 6 fotos   */}
           <div className="col-sm-7 caja1">
+            {/* Aqui va la primera fila    */}
             <div className="col-sm-12 caja1-1">
-              <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${foto1})`,backgroundSize: 'cover',
+            <div className="col-sm 4 caja1-1-1" style={{
+                backgroundImage: `url(${imagenes.foto1})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
                 <BotonMasC
-                  imgSrc={BotonMas} // Ruta de la imagen normal
-                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  imgSrc={imagenes.botonMas} // Ruta de la imagen normal
+                  imgSrcClicked={imagenes.botonMas}  // Ruta de la imagen clicada
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${foto2})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto2})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
               </div>
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${foto3})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto3})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
                   <BotonMasC
-                  imgSrc={BotonMas} // Ruta de la imagen normal
-                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  imgSrc={imagenes.botonMas} // Ruta de la imagen normal
+                  imgSrcClicked={imagenes.botonMas}  // Ruta de la imagen clicada
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
             </div>
+             {/* Aqui va la segunda fila   */}        
             <div className="col-sm-12 caja1-1">
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${foto4})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto4})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
               </div>
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${foto5})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto5})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
                   <BotonMasC
-                  imgSrc={BotonMas} // Ruta de la imagen normal
-                  imgSrcClicked={BotonMas}  // Ruta de la imagen clicada
+                  imgSrc={imagenes.botonMas} // Ruta de la imagen normal
+                  imgSrcClicked={imagenes.botonMas}  // Ruta de la imagen clicada
                   onClick={() => handleBotonClick('foto1')}  // Pasa la función del clic con el identificador de la imagen
                 />
               </div>
+              
               <div className="col-sm 4 caja1-1-1" style={{
-                backgroundImage: `url(${foto6})`,backgroundSize: 'cover',
+                backgroundImage: `url(${imagenes.foto6})`,backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center'}}
                 >
