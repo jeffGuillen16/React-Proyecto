@@ -2,4 +2,8 @@
     display: flex;
     background-color: transparent;
     border-color: transparent;
+    position: absolute;
+    margin-left: 9rem;
+    transform: translate(-50%, -50%);
+    z-index: 1; // Ajusta el valor de z-index según sea necesario
 }

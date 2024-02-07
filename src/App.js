@@ -28,7 +28,6 @@ function App() {
               <Gallery />
               <Hero />
               <Projects selected={selected} setSelected={setSelected} />
-              
               <Team />
             </Suspense>
           }
