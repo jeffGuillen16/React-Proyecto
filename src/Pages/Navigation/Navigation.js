@@ -1,101 +1,85 @@
-// Navigation.js
-import React, { useState } from "react";
+import React from "react";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { navigation_data } from "../../Data/Navigation_data";
+import { Link } from "react-router-dom";
 import "./Navigation.scss";
-import logo from "../../assets/Navigation/logo.png";
-import { icons } from "../../Data/Icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+function Navigation() {
+    
+    const primeraImagen = navigation_data[0][0];
 
-const NavigationBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+    return (
+        <Navbar
+            expand="lg" style={{ position: "fixed", zIndex: "1" , height:"6.5%",width:"100%" }}>
+            <Container>
+                <div className="brand-logo">
+                    <Link to={`/${primeraImagen.id}`}>
+                        <img
+                            src={primeraImagen.image}
+                            alt={`Imagen ${primeraImagen.id}`}
+                            width={"55px"} height={"55px"}
+                        />
+                    </Link>
+                </div>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="d-flex justify-content-center">
+                        <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">
+                                Action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">
+                                Something
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">
+                                Separated link
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown
+                            title="ILUSTRADORES"
+                            id="basic-nav-dropdown"
+                        >
+                            <NavDropdown.Item href="#action/3.1">
+                                Action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">
+                                Something
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">
+                                Separated link
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown
+                            title="COLLECIONES"
+                            id="basic-nav-dropdown"
+                        >
+                            <NavDropdown.Item href="#action/3.1">
+                                Action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">
+                                Something
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">
+                                Separated link
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="#link">SOBRE NOSOTROS</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
+}
 
-  const handleBurgerMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  return (
-    <div className={`Navigation ${isMenuOpen ? "menu-open" : ""}`}>
-      <nav className="row">
-        <div className="col-sm-2 d-flex justify-content-around align-items-center">
-          <FontAwesomeIcon
-            icon={["fa-bars", icons.BurgerMenu]}
-            size="lg"
-            className="brand-menu"
-            onClick={handleBurgerMenuClick}
-          />
-          <img
-            src={logo}
-            className="brand-logo"
-            alt="logo"
-            style={{ width: "55px", height: "55px", cursor: "auto" }}
-          />
-        </div>
-        <div className="col-sm">
-          <span>PRODUCTOS</span>
-          <FontAwesomeIcon
-            icon={["fa-chevron-down", icons.chevronDown]}
-            size="lg"
-            className="brand-chevron"
-          />
-        </div>
-        <div className="col-sm">
-          <span>ILUSTRADORES</span>
-          <FontAwesomeIcon
-            icon={["fa-chevron-down", icons.chevronDown]}
-            size="lg"
-            className="brand-chevron"
-          />
-        </div>
-        <div className="col-sm">
-          <span>COLECCIONES</span>
-          <FontAwesomeIcon
-            icon={["fa-chevron-down", icons.chevronDown]}
-            size="lg"
-            className="brand-chevron"
-          />
-        </div>
-        <div className="col-sm">
-          <span>NOSOTROS</span>
-        </div>
-        <div className="col-sm-4">
-          <FontAwesomeIcon
-            icon={["fa-magnifying-glass", icons.MagnifyingGlass]}
-            size="lg"
-            className="brand-logo"
-          />
-          <div className="shopping">
-            CARRITO/$0
-            <FontAwesomeIcon
-              icon={["fa-cart-shopping", icons.faCartShopping]}
-              size="lg"
-            />
-          </div>
-        </div>
-      </nav>
-      <div className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
-        <div className="menu-items">
-          <span>Ofertas</span>
-        </div>
-        <div className="menu-items">
-          <span>Novedades</span>
-        </div>
-        <div className="menu-items">
-          <span>Preguntas Frecuentes</span>
-        </div>
-        <div className="menu-items">
-          <span>Sugerencias</span>
-        </div>
-        <div className="menu-items">
-          <span>Contacto</span>
-        </div>
-        <div className="menu-items">
-          <span>Términos y condiciones</span>
-        </div>
-        <div className="menu-items">
-          <span>¿Querés trabajar con nosotros?</span>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default NavigationBar;
+export default Navigation;
