@@ -2,101 +2,18 @@
 @use "../../styles/abstract/colors" as *;
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
-/* The following line can be included in a src/App.scss */
-@import '~bootstrap/scss/bootstrap';
-.Navigation {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  margin: 0;
+.navbar {
+  background-color: $light-success;
   padding: 0;
-  overflow: hidden;
-
-  .col-sm-2 {
+  margin: 0;
+  font-size: 1rem;
+    .container{
     padding: 0;
-    margin: 0;
-    height: 60px; // Establece la altura deseada para el logo
-    display: flex;
-    align-items: center;
+    margin-left: 10%;
   }
-
-  .col-sm > span,
-  .fa-magnifying-glass,
-  .fa-bars {
-    &:hover {
-      color: $light-success-30;
-    }
-  }
-
-  .col-sm > span,
-  .fa-bars,
-  .fa-magnifying-glass,
-  .col-sm-5 {
-    cursor: pointer;
-  }
-  .col-sm-2{
-    cursor: auto;
-  }
-
-  nav {
-    padding: 0px 20px;
-    background-color: $light-success;
-  }
-
-  nav > div {
-    height: 60px;
-    display: flex;
-    align-items: center;
-  }
-
-  nav > div:last-child {
-    border-right: none;
-  }
-  .fa-chevron-down {
-    margin-left: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
-  .shopping {
-    margin-left: 12rem;
-    cursor: pointer;
-    &:hover {
-      color: $light-success-30;
-    }
-  }
-
-  .menu {
-    width: 17%;
-    position: fixed;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 0px 0px 1px 0px solid $dark-text-60;
-    margin:0px;
-    padding: 0px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.3s, opacity 0.3s;
-    background-color: $light-success;
-    span {
-      font-weight: 400;
-    }
-
-    .menu-items {
-      cursor: pointer;
-      &:hover {
-        background-color: $light-success-30;
-      }
-    }
-    
-    .menu-items > span {
-      padding: 5px;
-    }
-
-    &.menu-open {
-      visibility: visible;
-      opacity: 1;
-    }
+  .navbar-nav{
+    padding: 0;
+    margin-left: 5%;
+    gap: 3rem;
   }
 }
