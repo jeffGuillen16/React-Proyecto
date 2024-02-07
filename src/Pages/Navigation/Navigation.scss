@@ -1,9 +1,9 @@
-// Navigation.scss
 @use "../../styles/abstract/colors" as *;
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
 /* The following line can be included in a src/App.scss */
 @import '~bootstrap/scss/bootstrap';
+
 .Navigation {
   width: 100%;
   position: fixed;
@@ -53,6 +53,7 @@
   nav > div:last-child {
     border-right: none;
   }
+
   .fa-chevron-down {
     margin-left: 8px;
     font-size: 1rem;
@@ -70,15 +71,16 @@
   .menu {
     width: 17%;
     position: fixed;
-    z-index: 1000;
+    z-index: 1100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: 0px 0px 1px 0px solid $dark-text-60;
-    margin:0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s, opacity 0.3s;
     background-color: $light-success;
+
     span {
       font-weight: 400;
     }
@@ -98,5 +100,9 @@
       visibility: visible;
       opacity: 1;
     }
+  }
+  .BasicExample {
+    position: relative; /* Asegurarse de que el componente tenga un posicionamiento relativo */
+    z-index: 4000; /* Asegurarse de que tenga un z-index mayor que el menú desplegable */
   }
 }
