@@ -1,37 +1,85 @@
+import React from "react";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { navigation_data } from "../../Data/Navigation_data";
+import { Link } from "react-router-dom";
+import "./Navigation.scss";
+function Navigation() {
+    
+    const primeraImagen = navigation_data[0][0];
 
-// NavbarComponent.jsx
+    return (
+        <Navbar
+            expand="lg" style={{ position: "fixed", zIndex: "1" , height:"6.5%",width:"100%" }}>
+            <Container>
+                <div className="brand-logo">
+                    <Link to={`/${primeraImagen.id}`}>
+                        <img
+                            src={primeraImagen.image}
+                            alt={`Imagen ${primeraImagen.id}`}
+                            width={"55px"} height={"55px"}
+                        />
+                    </Link>
+                </div>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="d-flex justify-content-center">
+                        <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">
+                                Action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">
+                                Something
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">
+                                Separated link
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown
+                            title="ILUSTRADORES"
+                            id="basic-nav-dropdown"
+                        >
+                            <NavDropdown.Item href="#action/3.1">
+                                Action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">
+                                Something
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">
+                                Separated link
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown
+                            title="COLLECIONES"
+                            id="basic-nav-dropdown"
+                        >
+                            <NavDropdown.Item href="#action/3.1">
+                                Action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">
+                                Another action
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">
+                                Something
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">
+                                Separated link
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="#link">SOBRE NOSOTROS</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
+}
 
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-
-const NavbarComponent = () => {
-  return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        {/* Logo */}
-        <Navbar.Brand href="#home">
-          <img
-            src="ruta-al-logo.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="Logo"
-          />
-        </Navbar.Brand>
-
-        {/* Espaciador */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-space-around" style={{ display:"flex", justifyContent:"" }}>
-          <Nav className="mr-auto">
-            <Nav.Link href="#productos">Productos</Nav.Link>
-            <Nav.Link href="#ilustradores">Ilustradores</Nav.Link>
-            <Nav.Link href="#colecciones">Colecciones</Nav.Link>
-            <Nav.Link href="#nosotros">Nosotros</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-};
-
-export default NavbarComponent;
+export default Navigation;
