@@ -15,7 +15,7 @@ function Gallery() {
     setIndex(selectedIndex);
   };
   return (
-    <div style={{ height: "121vh", overflow: "none" }}>
+    <div style={{ height: "100%", overflow: "none" }}>
       <Container fluid className="contenedor">
         <Row style={{ height: "100%" }}>
           {/* Columna Roja */}
