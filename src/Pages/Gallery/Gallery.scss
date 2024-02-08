@@ -1,68 +1,75 @@
 @use "../../styles/abstract/colors" as *;
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
+.gallery {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 3rem;
+}
 
-.navFloat {
-  background-color: #00000042;
-  z-index: 1;
-  width: 3.5rem;
-  height: 22rem;
-  position: fixed;
-  top: 50%; /* Centramos verticalmente en relación con el contenedor padre */
-  transform: translateY(-50%); /* Ajustamos verticalmente */
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+.caja {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Agregamos position relative al contenedor padre */
+  
+    .navFloat {
+      background-color: #00000042;
+      z-index: 1;
+      width: 3rem;
+      height: 22rem;
+      position: fixed;
+      top: 50%; /* Centramos verticalmente en relación con el contenedor padre */
+      transform: translateY(-50%); /* Ajustamos verticalmente */
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      overflow: hidden;
+  
+      .icon {
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+  
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+  }
+  
+
+.caja1 {
   display: flex;
   flex-direction: column;
+}
+
+.caja1-1 {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.caja1-1-1 {
+  display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  overflow: hidden;
+  justify-content: center;
+}
 
-  .icon {
-    text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
+#demo {
+  height: 100%;
+}
 
-    &:hover {
-      color: #000000ab;
-    }
-  }
-}
-.carousel {
-  .carousel-control-prev,
-  .carousel-control-next {
-    margin-left: 2rem;
-  }
-  .carousel-indicators {
-    margin-bottom: 5rem !important; /* Asegura que este estilo tenga prioridad */
-  }
-  .custom-button{
-    color: black !important;
-    background-color: #C4C4C4 !important;
-    border-radius: 3rem;
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem;
-    height: 2rem;
-    width: 33%;
-    border: transparent;
-  }
-}
-.contenedor {
-  margin-top: 3rem;
-  .caja {
-    margin: 0 !important;
-    padding: 0 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    .foto {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
+// Estilos del nav float Facebook, Whatsapp, Instagram y Tiktok
+
+ 
+
