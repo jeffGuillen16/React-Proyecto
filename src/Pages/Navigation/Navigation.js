@@ -2,6 +2,9 @@ import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { navigation_data } from "../../Data/Navigation_data";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { icons } from "../../Data/Icons.js";
+
 import "./Navigation.scss";
 function Navigation() {
     
@@ -9,7 +12,7 @@ function Navigation() {
 
     return (
         <Navbar
-            expand="lg" style={{ position: "fixed", zIndex: "1" , height:"6.5%",width:"100%" }}>
+            expand="lg" style={{ position: "fixed", zIndex: "1" , height:"7.5%",width:"100%" }}>
             <Container>
                 <div className="brand-logo">
                     <Link to={`/${primeraImagen.id}`}>
@@ -25,17 +28,17 @@ function Navigation() {
                     <Nav className="d-flex justify-content-center">
                         <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">
-                                Action
+                                Poleras
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
-                                Another action
+                                Gorros
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">
-                                Something
+                                Bolsas
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                                Tapabocas
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown
@@ -43,38 +46,60 @@ function Navigation() {
                             id="basic-nav-dropdown"
                         >
                             <NavDropdown.Item href="#action/3.1">
-                                Action
+                                Sonia Maria Cano
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
-                                Another action
+                                Alfon U Riarte
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">
-                                Something
+                                Cristobal Laguna
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                                Miguel Angel Ruiz
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown
-                            title="COLLECIONES"
+                            title="COLECIONES"
                             id="basic-nav-dropdown"
                         >
                             <NavDropdown.Item href="#action/3.1">
-                                Action
+                                Colección Amor
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
-                                Another action
+                                Coleción Navideña 
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">
-                                Something
+                                Colección Hallowen
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                                Colección Kawaii
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#link">SOBRE NOSOTROS</Nav.Link>
+                        <div className="brand-icon">
+                        <div className="brand-buscador">
+                        <a className="icon" href="/">
+                        <FontAwesomeIcon
+                        icon={["fas", icons.MagnifyingGlass]}
+                        size="lg"
+                        className="brand-menu"
+                        style={{color:"#000",marginTop:"7px"}}
+                            />
+                        </a>
+                        </div>
+                        <div className="brand-cart">
+                        <a className="icon" href="/">
+                        <FontAwesomeIcon
+                        icon={["fa", icons.faCartShopping]}
+                        size="lg"
+                        
+                        style={{color:"#000",marginTop:"7px"}}
+                            />
+                        </a>
+                        </div>
+                        </div>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
