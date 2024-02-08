@@ -63,7 +63,8 @@ function Gallery() {
                 <img
                   src={imagenes.foto1}
                   alt="Los Angeles"
-                  class="d-block w-100 img-fluid"
+                  class="w-100"
+                  style={{ height:'' }}
                 />
                 <Carousel.Caption>
                   <Button variant="secondary" className="custom-button">
@@ -75,7 +76,8 @@ function Gallery() {
                 <img
                   src={imagenes.foto1}
                   alt="Los Angeles"
-                  class="d-block w-100 img-fluid"
+                  class="w-100"
+                  
                 />
                 <Carousel.Caption>
                   <Button
@@ -91,7 +93,8 @@ function Gallery() {
                 <img
                   src={imagenes.foto1}
                   alt="Los Angeles"
-                  class="d-block w-100 img-fluid"
+                  class="w-100"
+                  
                 />
                 <Carousel.Caption>
                   <Button variant="secondary" className="custom-button">
@@ -103,10 +106,11 @@ function Gallery() {
             {/* Aqui Cierra el Carrousel  */}
           </Col>
           {/* Columna Blanca */}
-          <Col className="bg-white" style={{ height: "100%" }} lg={7} xs={12}>
-            <Row
+          <Col className="bg-white" lg={7} xs={12}>
+            <Row 
             xs={12}
-              className=""
+              className="fila"
+              class="w-100 img-fluid"
               style={{ height: "100%" }}
             >
               {/* Primera Fila */}

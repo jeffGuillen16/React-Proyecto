@@ -50,6 +50,11 @@
 }
 .contenedor {
   margin-top: 2rem;
+  .fila{
+    @media (max-width:740px) {
+      height: 100%;
+    }
+  }
   .caja {
     margin: 0 !important;
     padding: 0 !important;
