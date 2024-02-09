@@ -12,7 +12,7 @@ function Navigation() {
 
     return (
         <Navbar
-            expand="lg" style={{ position: "fixed", zIndex: "900" , height:"6.5%",width:"100%"}}>
+            expand="lg" style={{ position: "fixed", zIndex: "900" , height:"80px",width:"100%"}}>
             <Container>
                 <div className="brand-logo">
                     <Link to={`/${primeraImagen.id}`}>
