@@ -25,7 +25,6 @@
     display:block ;
   }
   @include respond(tab-land) {
-    height: 11% !important;
 
     .container {
       max-width: 100%;
@@ -54,7 +53,9 @@
       content: none;
     }
     
-
+    .nav-item{
+      margin-top: 14px;
+    }
     .nav-item:hover {
       background-color: $light-success-30;
     }
@@ -65,7 +66,6 @@
      padding:0px;
      width: 100%;
      text-align: center;
-     gap: 5px;
     }
    
   }
