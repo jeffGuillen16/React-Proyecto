@@ -3,7 +3,6 @@
 @import "../../responsive/mixin";
 .navbar {
   background-color: $light-success;
-    flex-wrap: nowrap;
     padding: 10px;
   .navbar-nav {
     gap: 2rem;
@@ -34,6 +33,7 @@
   }
   a:hover {
     background-color: $light-success-30;
+    border-radius: 5px;
   }
   @include respond(tab-land) {
     height:140px!important;
