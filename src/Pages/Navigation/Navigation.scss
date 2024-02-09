@@ -3,30 +3,70 @@
 @import "../../responsive/mixin";
 .navbar {
   background-color: $light-success;
-  padding: 0;
-  margin: 0;
-  font-size: 1rem;
+  
+  .navbar-nav {
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .my-custom-class{
+    display: flex !important;
+  }
 
-    .container{
-    padding: 0;
-    margin-left: 10%;
-  }
-  .navbar-nav{
-    padding: 0;
-    margin-left: 5%;
-    gap: 3rem;
-  }
-  .brand-icon{
+  .brand-icon {
     display: flex;
-    gap: 600%;
+    gap: 300%;
   }
-  @include respond(tab-port) {
-    .navbar{
-      overflow: hidden;
-      width: 100%;
-      .navbar-toggler {
-        font-size: 3rem;
-      }
+.container{
+  margin-bottom: 10px;
+}
+  .navbar-nav {
+    margin-right: 30%;
+    display:block ;
+  }
+  @include respond(tab-land) {
+    height: 11% !important;
+
+    .container {
+      max-width: 100%;
+      padding: 0px;
     }
-	}
+    img {
+      height: 60px;
+      width: 60px;
+      margin-left: 25px;
+    }
+    .navbar-toggler {
+      margin-right: 5%;
+      font-size: 1.4rem;
+    }
+    .navbar-collapse {
+      background-color: $light-success;
+      width: 100%;
+    }
+    .brand-menu,
+    .brand-cart {
+      display: none;
+    }
+
+
+    .dropdown-toggle::after {
+      content: none;
+    }
+    
+
+    .nav-item:hover {
+      background-color: $light-success-30;
+    }
+    .navItemsText:hover {
+      background-color: $light-success-30;
+    }
+    .my-custom-class{
+     padding:0px;
+     width: 100%;
+     text-align: center;
+     gap: 5px;
+    }
+   
+  }
 }
