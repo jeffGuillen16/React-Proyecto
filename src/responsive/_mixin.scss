@@ -39,7 +39,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     }
     // Table Landscape
     @if $breakpoint == tab-land {
-        @media (max-width: 75em) {
+        @media (max-width: 62.5em) {
             @content;
         } //1200px
     }

@@ -12,7 +12,7 @@ function Navigation() {
 
     return (
         <Navbar
-            expand="lg" style={{ position: "fixed", zIndex: "900" , height:"7.5%",width:"100%"}}>
+            expand="lg" style={{ position: "fixed", zIndex: "900" , height:"9%",width:"100%"}}>
             <Container>
                 <div className="brand-logo">
                     <Link to={`/${primeraImagen.id}`}>
@@ -24,8 +24,8 @@ function Navigation() {
                     </Link>
                 </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse>
-                    <Nav className="d-flex justify-content-center">
+                <Navbar.Collapse >
+                    <Nav className= "my-custom-class">
                         <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">
                                 Poleras
@@ -77,7 +77,7 @@ function Navigation() {
                                 Colección Kawaii
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#link">SOBRE NOSOTROS</Nav.Link>
+                        <Nav.Link className="navItemsText" href="#link">SOBRE NOSOTROS</Nav.Link>
                         <div className="brand-icon">
                         <div className="brand-buscador">
                         <a className="icon" href="/">
