@@ -26,7 +26,7 @@ function Navigation() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse >
                     <Nav className= "my-custom-class">
-                        <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
+                        <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown ">
                             <NavDropdown.Item href="#action/3.1">
                                 Poleras
                             </NavDropdown.Item>
