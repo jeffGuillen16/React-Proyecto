@@ -3,15 +3,19 @@
 @import "../../responsive/mixin";
 .navbar {
   background-color: $light-success;
-
-  
+    flex-wrap: nowrap;
+    padding: 10px;
   .navbar-nav {
     gap: 2rem;
     margin: 0 auto;
     padding: 20px;
   }
+  .dropdown-toggle::after {
+    content: none;
+  }
   .my-custom-class{
     display: flex !important;
+    margin-bottom: 20px;
   }
  
   .brand-icon {
@@ -29,6 +33,7 @@
     
   }
   @include respond(tab-land) {
+    height:120px!important;
     position: fixed;
         .container {
       max-width: 100%;
@@ -54,11 +59,6 @@
       display: none;
     }
 
-
-    .dropdown-toggle::after {
-      content: none;
-    }
-    
     .nav-item{
       margin-top: 14px;
     }
@@ -73,7 +73,10 @@
      width: 100%;
      text-align: center;
     }
-   
+   img{
+    height: 90px;
+    width: 90px;
+   }
   }
   
 }

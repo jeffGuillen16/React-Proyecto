@@ -12,7 +12,7 @@ function Navigation() {
 
     return (
         <Navbar
-            expand="lg" style={{ position: "fixed", zIndex: "900" , height:"80px",width:"100%"}}>
+            expand="lg" style={{ position: "fixed", zIndex: "900" , height:"60px",width:"100%"}}>
             <Container>
                 <div className="brand-logo">
                     <Link to={`/${primeraImagen.id}`}>
@@ -77,7 +77,7 @@ function Navigation() {
                                 Colección Kawaii
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link className="navItemsText" href="#link">SOBRE NOSOTROS</Nav.Link>
+                        <Nav.Link className="navItemsText" href="#link">NOSOTROS</Nav.Link>
                         <div className="brand-icon">
                         <div className="brand-buscador">
                         <a className="icon" href="/">
