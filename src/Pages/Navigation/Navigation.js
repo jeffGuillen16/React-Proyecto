@@ -19,7 +19,7 @@ function Navigation() {
                         <img
                             src={primeraImagen.image}
                             alt={`Imagen ${primeraImagen.id}`}
-                            width={"55px"} height={"55px"}
+                            width={"65px"} height={"65px"}
                         />
                     </Link>
                 </div>
