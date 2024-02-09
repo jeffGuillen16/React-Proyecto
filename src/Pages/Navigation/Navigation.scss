@@ -8,26 +8,29 @@
   .navbar-nav {
     gap: 2rem;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
   }
   .my-custom-class{
     display: flex !important;
   }
-
+ 
   .brand-icon {
     display: flex;
     gap: 300%;
   }
-.container{
-  margin-bottom: 0px ;
-}
+  .brand-logo{
+    margin-bottom: 12px;
+  }
+  .container{
+    max-height: 100%;
+  }
   .navbar-nav {
     margin-right: 30%;
     
   }
   @include respond(tab-land) {
     position: fixed;
-    .container {
+        .container {
       max-width: 100%;
       padding: 0px;
     }
@@ -39,12 +42,12 @@
     .navbar-toggler {
       margin-right: 5%;
       font-size: 1.4rem;
+      margin-bottom: 10px;
     }
     .navbar-collapse {
       background-color: $light-success;
       width: 100%;
-      margin-top:  -5px;
-      
+     
     }
     .brand-menu,
     .brand-cart {
