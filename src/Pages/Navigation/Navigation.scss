@@ -2,10 +2,12 @@
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
 .navbar {
+  width: 100%;
+  position: fixed;
   background-color: $light-success;
-    padding: 0px;
+  padding: 0px;
   .navbar-nav {
-    gap: 2rem;
+    gap: 4%;
     padding: 10%;
   }
   .dropdown-toggle::after {
@@ -13,16 +15,13 @@
   }
   .my-custom-class{
     display: flex !important;
-    margin-bottom: 0 auto
   }
  
   .brand-icon {
     display: flex;
-    gap: 300%;
+    gap: 98%;
   }
-  .brand-logo{
-    margin-bottom: 0 auto;
-  }
+
   .container{
     margin-bottom: 0 auto;
   }
@@ -30,6 +29,23 @@
     margin-right: 30%;
     
   }
+  .icons-media {
+    display: flex;
+  }
+  
+  .icon-container {
+    width: 40px; /* Tamaño del contenedor del icono */
+    height: 40px; /* Tamaño del contenedor del icono */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  
+
   a:hover {
     background-color: $light-success-30;
     border-radius: 5px;
