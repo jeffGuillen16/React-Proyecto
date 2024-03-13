@@ -15,13 +15,12 @@ function Navigation() {
             expand="lg" style={{ position: "fixed", zIndex: "900" , height:"60px",width:"100%"}}>
             <Container>
                 <div className="brand-logo">
-                    <Link to={`/${primeraImagen.id}`}>
+                   
                         <img
                             src={primeraImagen.image}
                             alt={`Imagen ${primeraImagen.id}`}
                             width={"65px"} height={"65px"}
                         />
-                    </Link>
                 </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse >
@@ -60,7 +59,7 @@ function Navigation() {
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown
-                            title="COLECIONES"
+                            title="COLECCIONES"
                             id="basic-nav-dropdown"
                         >
                             <NavDropdown.Item href="#action/3.1">
