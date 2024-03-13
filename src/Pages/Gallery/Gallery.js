@@ -24,40 +24,7 @@ function Gallery() {
             style={{ height: "100%", paddingLeft: 0, paddingRight: 0 }}
             lg={5}
             xs={12}
-          >
-            {/* Aqui va el Nav vertical de botones  */}
-            <div className="navFloat">
-              <a className="icon" href="/">
-                <FontAwesomeIcon
-                  icon={["fab", icons.Facebook]}
-                  size="lg"
-                  className="brand-menu"
-                />
-              </a>
-              <a className="icon" href="/">
-                <FontAwesomeIcon
-                  icon={["fab", icons.Whatsapp]}
-                  size="lg"
-                  className="brand-menu"
-                />
-              </a>
-              <a className="icon" href="/">
-                <FontAwesomeIcon
-                  icon={["fab", icons.Instagram]}
-                  size="lg"
-                  className="brand-menu"
-                />
-              </a>
-              <a className="icon" href="/">
-                <FontAwesomeIcon
-                  icon={["fab", icons.Tiktok]}
-                  size="lg"
-                  className="brand-menu"
-                />
-              </a>
-            </div>
-            {/* Aqui cierra  el nav vertical de botones  */}
-            {/* Aqui va el Carrousel  */}
+          > 
             <Carousel activeIndex={index} onSelect={handleSelect}>
               <Carousel.Item>
                 <img
