@@ -3,7 +3,6 @@
 @import "../../responsive/mixin";
 .navbar {
   background-color: $light-success;
-    flex-wrap: nowrap;
     padding: 10px;
   .navbar-nav {
     gap: 2rem;
@@ -26,7 +25,7 @@
     margin-bottom: 0 auto;
   }
   .container{
-    max-height: 100%;
+    margin-bottom: 13px;
   }
   .navbar-nav {
     margin-right: 30%;
@@ -34,24 +33,25 @@
   }
   a:hover {
     background-color: $light-success-30;
+    border-radius: 5px;
   }
   @include respond(tab-land) {
-    height:140px!important;
+    height:70px!important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: fixed;
         .container {
       max-width: 100%;
       padding: 0px;
     }
     img {
-      height: 60px;
-      width: 60px;
+      height: 60px!important;
+      width:60px!important;
       margin-left: 25px;
     }
     .navbar-toggler {
       margin-right: 5%;
-      font-size: 2rem;
+      font-size: 1rem;
       margin-bottom: 10px;
     }
     .navbar-collapse {
