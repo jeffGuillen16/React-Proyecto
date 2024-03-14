@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { navigation_data } from "../../Data/Navigation_data";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../../Data/Icons.js";
 
@@ -88,12 +87,14 @@ function Navigation() {
                   <FontAwesomeIcon
                     icon={["fa", icons.faCartShopping]}
                     size="lg"
-                    style={{ color: "#000", marginTop: "7px" }}
+                    style={{ color: "#000", marginTop: "7px" ,}}
+                    className="icono-carrito"
+                  
                   />
                 </a>
               </div>
               <div className="icons-media">
-                <div className="icon-container">
+               
                   <a className="icons-fab" href="/">
                     <FontAwesomeIcon
                       icon={["fab", icons.Facebook]}
@@ -101,8 +102,8 @@ function Navigation() {
                       style={{ color: "#000" }}
                     />
                   </a>
-                </div>
-                <div className="icon-container">
+               
+               
                   <a className="icons-fab" href="/">
                     <FontAwesomeIcon
                       icon={["fab", icons.Instagram]}
@@ -110,8 +111,8 @@ function Navigation() {
                       style={{ color: "#000" }}
                     />
                   </a>
-                </div>
-                <div className="icon-container">
+               
+               
                   <a className="icons-fab" href="/">
                     <FontAwesomeIcon
                       icon={["fab", icons.Tiktok]}
@@ -119,7 +120,7 @@ function Navigation() {
                       style={{ color: "#000" }}
                     />
                   </a>
-                </div>
+               
               </div>
             </div>
           </Nav>

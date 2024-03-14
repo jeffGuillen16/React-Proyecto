@@ -21,7 +21,7 @@
     display: flex;
     gap: 98%;
   }
-
+ 
   .container{
     margin-bottom: 15px;
   }
@@ -31,25 +31,26 @@
   }
   .icons-media {
     display: flex;
+    gap: 8px;
+    
   }
-  
-  .icon-container {
-    width: 40px; /* Tamaño del contenedor del icono */
-    height: 40px; /* Tamaño del contenedor del icono */
-    border-radius: 50%; /* Hace que el contenedor sea circular */
+  .icons,.icons-fab{
+  &:hover{
+    background-color: transparent;
+  }}
+  .icons-fab{
+    cursor: pointer;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
     border: 2px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
-  }
-  
-  
+  &:hover {
+    background-color: rgba(255, 122, 69, 0.87); /* Cambia el color de fondo al pasar el mouse */
+  }}
 
-  a:hover {
-    background-color: $light-success-30;
-    border-radius: 5px;
-  }
   @include respond(tab-land) {
     height:70px!important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
