@@ -13,6 +13,7 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "react-multi-carousel/lib/styles.css";
+import Products from "./Pages/Products/Products";
 
 function App() {
   const [selected, setSelected] = useState(0);
@@ -33,6 +34,16 @@ function App() {
           }
         />
         {/* <Route path="/project/:projectId" element={<ProjectPage />} /> */}
+        <Route
+          path="/productos"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Products/>
+              <Projects selected={selected} setSelected={setSelected} />
+              <Team />
+            </Suspense>
+          }
+        />
       </Routes>
       <Footer />
     </div>
