@@ -1,5 +1,91 @@
 .contenedor{
-    Col{
+    height: 100%;
+    width: 100%;
+    margin-top: 3.8rem;
+    
+    .columna{
+        background-color: red;
         height: 100%;
+        
+        
+    }
+    .columna1{
+        
+        height: 100%;
+        .info{
+            height: 4.5rem;
+            .filtro-ordenP{
+                display:flex;
+                align-items: center;
+                
+                .custom-select {
+                    border: none; /* Eliminar el borde */
+                    border-radius: 0; /* Esquinas cuadradas */
+                    background-color: #EEEEEE; /* Cambiar el color de fondo */
+                    color: #000000; /* Cambiar el color del texto */
+                    font-size: 15px; /* Cambiar el tamaño del texto */
+                    /* Otros estilos personalizados que desees */
+                    height: 2.6rem;
+                }
+            }
+            .resultados{
+                display: flex;
+                align-items: center;
+            }
+            .paginas{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                padding-right: 3rem;
+                button {
+                    border-radius: 50%; /* Hace que el botón sea redondo */
+                    width: 30px; /* Ajusta el tamaño del botón según sea necesario */
+                    height: 30px;
+                    margin: 5px; /* Agrega espacio entre los botones */
+                
+                    border: bold; /* Elimina el borde */
+                    color: rgb(12, 11, 11); /* Color del texto */
+                }
+                .btn:hover {
+                    background-color: #C0C0C0; /* Cambia el color de fondo al pasar el mouse */
+                }
+                
+                .active {
+                    background-color: #90EE90 !important; /* Cambia el color de fondo cuando está activo */
+                }
+                
+            }
+        }
+        .contenedor-cards{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+// Definición del mixin respond
+@mixin respond($breakpoint) {
+    @if $breakpoint == tab-land {
+        @media (min-width: 768px) and (max-width: 1023px) {
+            @content;
+        }
+    }
+    // Agrega más condiciones según sea necesario para otros breakpoints
+}
+
+// Uso del mixin respond
+@include respond(tab-land) {
+    .fila{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .columna{
+            width: 100%;
+        }
+        .columna1{
+            width: 100%;
+        }
     }
 }
