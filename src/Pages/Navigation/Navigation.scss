@@ -21,7 +21,7 @@
     display: flex;
     gap: 90%;
   }
-
+ 
   .container{
     margin: 0 auto;
   }
@@ -31,44 +31,26 @@
   }
   .icons-media {
     display: flex;
+    gap: 8px;
     
   }
-
-
-  .icons-fab {
-    width: 40px; /* Tamaño del contenedor del icono */
-    height: 40px; /* Tamaño del contenedor del icono */
-    border-radius: 50%; /* Hace que el contenedor sea circular */
-    border: 2px solid hsl(0, 0%, 0%); /* Ajusta el tamaño del borde */
-    font-size: 1.5rem;
+  .icons,.icons-fab{
+  &:hover{
+    background-color: transparent;
+  }}
+  .icons-fab{
+    cursor: pointer;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centra verticalmente */
-    margin-right:5px ;
-    &:hover {
-      width: 40px; /* Tamaño del contenedor del icono */
-      height: 40px; /* Tamaño del contenedor del icono */
-      border-radius: 50%; /* Hace que el contenedor sea circular */
-      background-color: $light-highlight-bk;
-      border-color: $light-highlight-bk; /* Cambia el color del borde al hacer hover */
-    }
-  }
-  
-  .brand-buscador ,
-.brand-cart {
+    align-items: center;
   &:hover {
-    background-color: transparent; /* Elimina el cambio de color de fondo al hacer hover */
-    border-color: hsl(0, 0%, 0%); /* Cambia el color del borde al hacer hover */
-  }
-}
+    background-color: rgba(255, 122, 69, 0.87); /* Cambia el color de fondo al pasar el mouse */
+  }}
 
-
-  
-
-  a:hover {
-    background-color: $light-success-30;
-    border-radius: 5px;
-  }
   @include respond(tab-land) {
     height:70px!important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

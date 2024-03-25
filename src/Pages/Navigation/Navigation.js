@@ -62,12 +62,14 @@ function Navigation() {
                   <FontAwesomeIcon
                     icon={["fa", icons.faCartShopping]}
                     size="lg"
-                    style={{ color: "#000", marginTop: "7px" }}
+                    style={{ color: "#000", marginTop: "7px" ,}}
+                    className="icono-carrito"
+                  
                   />
                 </a>
               </div>
               <div className="icons-media">
-              
+               
                   <a className="icons-fab" href="/">
                     <FontAwesomeIcon
                       icon={["fab", icons.Facebook]}
@@ -75,8 +77,8 @@ function Navigation() {
                       style={{ color: "#000" }}
                     />
                   </a>
-              
-              
+               
+               
                   <a className="icons-fab" href="/">
                     <FontAwesomeIcon
                       icon={["fab", icons.Instagram]}
@@ -84,8 +86,8 @@ function Navigation() {
                       style={{ color: "#000" }}
                     />
                   </a>
-              
-              
+               
+               
                   <a className="icons-fab" href="/">
                     <FontAwesomeIcon
                       icon={["fab", icons.Tiktok]}
@@ -93,8 +95,8 @@ function Navigation() {
                       style={{ color: "#000" }}
                     />
                   </a>
-                </div>
-              
+               
+              </div>
             </div>
           </Nav>
         </Navbar.Collapse>
