@@ -30,6 +30,7 @@ function App() {
               <Hero />
               <Projects selected={selected} setSelected={setSelected} />
               <Team />
+              <Footer />
             </Suspense>
           }
         />
@@ -41,12 +42,14 @@ function App() {
               <Products/>
               <Projects selected={selected} setSelected={setSelected} />
               <Team />
+              <Footer/>
             </Suspense>
           }
-        />
+        /> 
       </Routes>
-      <Footer />
+      
     </div>
+    
   );
 }
 

@@ -38,21 +38,21 @@
                 text-align: center;
                 justify-content: center;
                 padding-right: 3rem;
-                button {
+                Button {
                     border-radius: 50%; /* Hace que el botón sea redondo */
                     width: 30px; /* Ajusta el tamaño del botón según sea necesario */
                     height: 30px;
                     margin: 5px; /* Agrega espacio entre los botones */
-                
-                    border: bold; /* Elimina el borde */
+                    
+                    
                     color: rgb(12, 11, 11); /* Color del texto */
                 }
                 .btn:hover {
-                    background-color: #C0C0C0; /* Cambia el color de fondo al pasar el mouse */
+                    background-color: #a55e5e; /* Cambia el color de fondo al pasar el mouse */
                 }
                 
                 .active {
-                    background-color: #90EE90 !important; /* Cambia el color de fondo cuando está activo */
+                    background-color: #b1f1b1 !important; /* Cambia el color de fondo cuando está activo */
                 }
                 
             }

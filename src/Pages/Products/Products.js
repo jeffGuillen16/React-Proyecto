@@ -4,6 +4,8 @@ import "./Products.scss";
 import { Container, Col,Card, Row} from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 
+
+
 import { Products } from '../../Data/Products_Data/Products_Data'; // Importa el objeto Products desde tu archivo
 /* import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
 import imagenes from "../../Data/Gallery/imagenes.js";
@@ -26,26 +28,33 @@ function Productos() {
 
     const handlePageClick = (pageNumber) => {
         setCurrentPage(pageNumber);
+
     };
+    
+   
+ 
   return (
    
       <Container fluid className="contenedor">
         {/* Primera Columna */}
         <Row className="fila">
           <Col className="columna" sm={3}>
-
+          
           </Col>
           <Col className="columna1" sm={9}>
             <Row sm={12} className="info">
                 <Col sm={4} className="paginas"  >
+                    
                     {Array.from({ length: totalPages }, (_, index) => (
-                        <button 
-                            key={index + 1} 
-                            onClick={() => handlePageClick(index + 1)} 
-                            className={currentPage === index + 1 ? 'active' : ''}
-                        >
-                            {index + 1}
-                        </button>
+                         <button 
+                             key={index + 1} 
+                           onClick={() => handlePageClick(index + 1)} 
+                            
+                             className={currentPage === index + 1 ? 'active' : ''}
+                         >
+                             {index + 1}
+                         </button>
+                   
                     ))}
                 </Col>
                 <Col sm={4} className="resultados">
