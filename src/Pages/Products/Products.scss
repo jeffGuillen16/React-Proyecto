@@ -39,12 +39,11 @@
                 justify-content: center;
                 padding-right: 3rem;
                 Button {
+                    
                     border-radius: 50%; /* Hace que el botón sea redondo */
                     width: 30px; /* Ajusta el tamaño del botón según sea necesario */
                     height: 30px;
                     margin: 5px; /* Agrega espacio entre los botones */
-                    
-                    
                     color: rgb(12, 11, 11); /* Color del texto */
                 }
                 .btn:hover {
