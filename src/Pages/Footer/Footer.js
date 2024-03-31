@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footer">
       <Container>
-        <Col md={12} xs={12} className="fila d-flex flex-wrap justify-content-center align-items-center">
+        <Col md={12} xs={12} className="fila ">
           <Link to="/" className=" mx-1 justify-content-center" >
             <img src={logotipos.pay} alt="paypal" className="logo" />
           </Link>
