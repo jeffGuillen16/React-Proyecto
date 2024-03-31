@@ -49,8 +49,12 @@
 }
 
 @include respond(tab-land) {
-    .fila1{
+    .fila{
         display: flex;
         flex-direction: column;
+    }
+    #logotipos{
+        display: flex;
+        flex-direction: row;
     }
 }
