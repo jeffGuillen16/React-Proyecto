@@ -1,8 +1,6 @@
 import "./Gallery.scss";
 import BotonMasC from "../../Components/BotonesGallery/BotonMas.js";
 import imagenes from "../../Data/Gallery/imagenes.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icons } from "../../Data/Icons.js";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Col, Row, Container, Carousel, Button } from "react-bootstrap";
@@ -24,14 +22,14 @@ function Gallery() {
             style={{ height: "100%", paddingLeft: 0, paddingRight: 0 }}
             lg={5}
             xs={12}
-          > 
+          >
             <Carousel activeIndex={index} onSelect={handleSelect}>
               <Carousel.Item>
                 <img
                   src={imagenes.foto1}
                   alt="Los Angeles"
                   class="w-100"
-                  style={{ height:'' }}
+                  style={{ height: "" }}
                 />
                 <Carousel.Caption>
                   <Button variant="secondary" className="custom-button">
@@ -40,12 +38,7 @@ function Gallery() {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  src={imagenes.foto1}
-                  alt="Los Angeles"
-                  class="w-100"
-                  
-                />
+                <img src={imagenes.foto1} alt="Los Angeles" class="w-100" />
                 <Carousel.Caption>
                   <Button
                     variant="secondary"
@@ -57,12 +50,7 @@ function Gallery() {
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  src={imagenes.foto1}
-                  alt="Los Angeles"
-                  class="w-100"
-                  
-                />
+                <img src={imagenes.foto1} alt="Los Angeles" class="w-100" />
                 <Carousel.Caption>
                   <Button variant="secondary" className="custom-button">
                     Ver más
@@ -74,8 +62,8 @@ function Gallery() {
           </Col>
           {/* Columna Blanca */}
           <Col className="bg-white" lg={7} xs={12}>
-            <Row 
-            xs={12}
+            <Row
+              xs={12}
               className="fila"
               class="w-100 img-fluid"
               style={{ height: "100%" }}
