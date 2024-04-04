@@ -81,9 +81,7 @@
       padding: 0;
       margin: 0;
       .navbar-collapse {
-        background-color: $light-success;
-        margin-bottom: 30px;
-        
+        background-color: $light-success;        
       }
     }
     
@@ -106,10 +104,9 @@
         padding: 0px;
       }
       .navItemsText {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         max-width: 100%;
         width: 100%;
-        margin-top: 30px;
         text-align: center;
         font-size:2rem;
         border-radius: 10px; // Ajusta el valor según sea necesario para lograr las puntas redondas
@@ -158,16 +155,17 @@
 		border-radius: 100px;
 		bottom: 80px;
 		color: #fff;
-		height: 80px;
 		position: fixed;
 		right: 40px;
 		text-align: center;
-		width: 80px;
+		height: 60px;
+		width: 60px;
 		z-index: 100;
-		padding: 0.8rem;
+		padding: 1.3rem;
 		cursor: pointer;
-	}
+	
     }
+  }
   }
 
   
