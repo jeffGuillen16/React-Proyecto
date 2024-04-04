@@ -128,7 +128,7 @@ function Navigation() {
         <div>
         <div className="brand_box">
           <a
-            href="https://api.whatsapp.com/send?phone=5491140640943&text=Hola."
+            href="https://api.whatsapp.com/send?phone=5491154128720&text=Hola."
             target="_blank"
             className="burger_links"
             rel="noopener noreferrer"
