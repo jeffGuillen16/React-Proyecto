@@ -16,7 +16,7 @@
   max-width: 100%;
   position: fixed;
   background-color: $light-success;
-  
+ 
   .dropdown-toggle::after {
     display: none;
   }
@@ -28,6 +28,7 @@
   }
   .navbar-collapse {
     .my-custom-class {
+      margin-bottom: 20px;
       .with-divider {
         border-right: 1px solid #ccc; /* Estilo de la línea de separación */
         padding-right: 10px; /* Espacio entre el texto y la línea de separación */
