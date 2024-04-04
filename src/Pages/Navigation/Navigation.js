@@ -46,7 +46,7 @@ function Navigation() {
                   <NavDropdown
                     title="PRODUCTOS"
                     id="productos-nav-dropdown"
-                    href="#productos"
+                    href="/Productos"
                     className="navItemsText"
                   />
                   <NavDropdown
