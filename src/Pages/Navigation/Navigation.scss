@@ -2,6 +2,13 @@
 @use "../../styles/abstract/base_styles" as *;
 @import "../../responsive/mixin";
 .navbar {
+  height: 78px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  max-width: 100%;
+  position: fixed;
   height: 70px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -10,7 +17,7 @@
   max-width: 100%;
   position: fixed;
   background-color: $light-success;
- 
+  
   .dropdown-toggle::after {
     display: none;
   }
@@ -22,7 +29,6 @@
   }
   .navbar-collapse {
     .my-custom-class {
-      margin-bottom: 20px;
       .with-divider {
         border-right: 1px solid #ccc; /* Estilo de la línea de separación */
         padding-right: 10px; /* Espacio entre el texto y la línea de separación */

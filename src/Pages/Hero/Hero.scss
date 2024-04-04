@@ -14,174 +14,31 @@
 // example 2 => background: $linear-gradient;
 
 .hero {
-    padding: 20px 20px 0px 20px;
+    padding: 30px 50px 0px 50px;
     // overflow: hidden;
     min-height: 100vh;
     width: 100%;
-    background-color: $primary-05;
+    background-color: $light-background;
+    font-size: 'ubuntu';
 
     @include respond(tab-port) {
         height: auto;
         padding: 10px 10px 0px 10px;
     }
+}
 
-    h1 {
-        font-size: calc($base-font-size + 1.5rem);
-        font-weight: 700;
-        max-width: 750px;
+.svg-img{
+    width: 11rem;
+    height: auto;
+}
 
-        @include respond(tab-port) {
-            font-size: calc($base-font-size + 1rem);
-        }
-    }
+.text-justify{
+    padding: 1.3rem 0rem;
+    text-align: justify;
+    font-weight: 400;
+}
 
-    .description {
-        margin-top: 30px;
-        margin-bottom: 100px;
-        font-size: calc($base-font-size + 0.2rem);
-        line-height: 25px;
-        font-weight: 700;
-        color: $light-text-38;
-        max-width: 500px;
-
-        @include respond(tab-port) {
-            font-size: calc($base-font-size + 0.1rem);
-        }
-    }
-
-    .my_container {
-        width: 500px;
-        margin-left: 0;
-
-        @include respond(phone) {
-            width: 100%;
-        }
-    }
-
-    .img_box {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .my_img {
-            width: 100%;
-            max-width: 800px;
-            min-width: 400px;
-        }
-    }
-
-    .award_icon_box {
-        height: 65px;
-        width: 65px;
-        color: $primary;
-        border: 8px solid $primary;
-        border-radius: 50px;
-        position: absolute;
-        top: 20px;
-
-        .award_icon {
-            font-size: calc($base-font-size + 15px);
-        }
-    }
-
-    .community, .clock {
-        position: absolute;
-        background-color: white;
-        box-shadow: 5px 10px 10px #8D8D8D;
-        
-        .house_icon_box {
-            color: $primary;
-            padding: 10px;
-
-            .house_icon {
-                font-size: calc($base-font-size + 15px);
-            }
-        }
-
-        .main_des {
-            width: fit-content;
-            
-            .title {
-                font-size: calc($base-font-size + 0.1rem);
-                font-weight: 700;
-            }
-
-            .sub_title {
-                color: $light-text-38;
-                font-size: calc($base-font-size + 0.1rem);
-                font-weight: 700;
-            }
-        }
-    }
-    .design_side {
-        display: block;
-
-        @include respond(tab-land) {
-            display: none;
-        }
-    }
-
-    .clock {
-        right: 100px;
-        bottom: -20px;
-
-        .clock_icon_box {
-            color: $primary;
-            padding: 10px;
-
-            .clock_icon {
-                font-size: calc($base-font-size + 20px);
-            }
-        }
-
-        .main_des {
-            width: fit-content;
-            
-            .title {
-                font-size: calc($base-font-size + 0.1rem);
-                font-weight: 700;
-            }
-        }
-    }
-
-    .bottom_search {
-        // height: 200px;
-        margin-top: 35px;
-        width: 98%;
-        background-color: white;
-
-        @include respond(tab-port) {
-            margin-top: 100px;
-        }
-
-        .house_img_box {
-            width: 100%;
-            max-width: 300px;
-            min-width: 200px;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        p {
-            color: $light-text-38;
-            font-weight: 700;
-            
-            @include respond(tab-port) {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-
-        .location_box, .property_box {
-            border-right: 4px solid $primary;
-
-            @include respond(tab-port) {
-                border: 0px;
-            }
-        }
-    }
+.products_container{
+    width: 100%;
+    padding-bottom: 10px;
 }
