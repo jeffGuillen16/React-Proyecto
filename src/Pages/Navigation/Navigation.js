@@ -8,6 +8,10 @@ import "./Navigation.scss";
 
 function Navigation() {
   const primeraImagen = navigation_data[0][0];
+  const handleNavDropdownClick = (event) => {
+    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    window.location.href = "/productos"; // Cambiar la ubicación de la página al hacer clic en el NavDropdown
+  };
 
   return (
     <>
@@ -44,11 +48,13 @@ function Navigation() {
                     />
                   </div>
                   <NavDropdown
-                    title="PRODUCTOS"
-                    id="productos-nav-dropdown"
-                    href="/Productos"
-                    className="navItemsText"
-                  />
+                  title="PRODUCTOS"
+                  id="productos-nav-dropdown"
+                  className="navItemsText"
+                  onClick={handleNavDropdownClick} // Agregar onClick para manejar el clic en el NavDropdown
+                >
+                  {/* Sin NavDropdown.Item */}
+                </NavDropdown>
                   <NavDropdown
                     title="ILUSTRADORES"
                     id="ilustradores-nav-dropdown"
