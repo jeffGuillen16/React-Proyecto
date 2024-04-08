@@ -30,14 +30,14 @@ function Navigation() {
             <img
               src={primeraImagen.image}
               alt={`Imagen ${primeraImagen.id}`}
-              width={"95px"}
-              height={"95px"}
+              width={"90px"}
+              height={"90px"}
             />
           </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
-            <Nav className="my-custom-class w-100 ">
-              <div className="row w-100">
+            <Nav>
+
                 <div className="col-8 col-lg-8 nav-dropDown d-flex justify-content-center align-items-center">
                   <div className="brand-logo">
                     <img
@@ -127,7 +127,6 @@ function Navigation() {
                     </a>
                   </div>
                 </div>
-              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
