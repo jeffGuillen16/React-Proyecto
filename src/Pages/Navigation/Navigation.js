@@ -30,8 +30,8 @@ function Navigation() {
             <img
               src={primeraImagen.image}
               alt={`Imagen ${primeraImagen.id}`}
-              width={"90px"}
-              height={"90px"}
+              width={"80px"}
+              height={"80px"}
             />
           </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

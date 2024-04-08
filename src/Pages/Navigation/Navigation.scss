@@ -96,7 +96,7 @@
   }
 
   @include respond(tab-land) {
-    height: 90px;
+    height: 80px;
     .container {
       display: flex !important;
       justify-content: space-between !important;
@@ -118,7 +118,7 @@
       display: flex;
     }
     .navbar-toggler {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-right: 1.2rem;
     }
     .nav-dropDown {
@@ -171,7 +171,7 @@
       align-items: center;
       font-size: 1.6rem;
       &:hover {
-        background-color: rgba(117, 188, 116, 1);
+        background-color: $light-success-30;
       }
     }
     .vertical-bar {
