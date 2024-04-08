@@ -6,7 +6,6 @@ import { icons } from "../../Data/Icons.js";
 
 import "./Navigation.scss";
 
-
 function Navigation() {
   const primeraImagen = navigation_data[0][0];
   const handleNavDropdownClick = (event) => {
