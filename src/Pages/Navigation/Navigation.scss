@@ -5,18 +5,16 @@
   height: 70px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 400;
   font-size: 1.3rem;
   max-width: 100%;
   position: fixed;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 400;
   font-size: 1rem;
   max-width: 100%;
   position: fixed;
   background-color: $light-success;
- 
+  .navbar-nav {
+    width: 100%;
+  }
   .dropdown-toggle::after {
     display: none;
   }
@@ -24,11 +22,11 @@
     display: none;
   }
   .container {
-    max-width: 100%;
+    padding: 0;
   }
   .navbar-collapse {
     .my-custom-class {
-      margin-bottom: 0 auto;
+      margin-bottom: 14px;
       .with-divider {
         border-right: 1px solid #ccc; /* Estilo de la línea de separación */
         padding-right: 10px; /* Espacio entre el texto y la línea de separación */
@@ -39,7 +37,25 @@
       }
     }
   }
-  
+
+  .navItemsText {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px; // Ajusta el valor según sea necesario para lograr las puntas redondas
+    transition: background-color 0.3s ease, border-color 0.3s ease; // Agrega transición para cambios suaves
+
+    &:hover {
+      background-color: rgba(
+        117,
+        188,
+        116,
+        1
+      ); // Cambia al color verde al pasar el puntero
+    }
+  }
+
   .icons-fab {
     cursor: pointer;
     width: 45px;
@@ -54,26 +70,33 @@
       background-color: rgba(117, 188, 116, 1);
     }
   }
-  .fa-whatsapp{
+  .fa-whatsapp {
     background-color: #25d366;
-		border: 0;
-		border-radius: 50px;
-		bottom: 40px;
-		color: #fff;
-		height: 40px;
-		position: fixed;
-		right: 40px;
-		text-align: center;
-		width: 40px;
-		z-index: 100;
-		padding: 0.7rem;
-		cursor: pointer;
-	}
+    border: 0;
+    border-radius: 50px;
+    bottom: 40px;
+    color: #fff;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 40px;
+    text-align: center;
+    z-index: 100;
+    padding: 0.7rem;
+    cursor: pointer;
+  }
   .brand-mobile {
     display: none;
   }
+  .vertical-bar {
+    width: 2px; // Ancho de la barra vertical
+    height: 30px; // Altura de la barra vertical (ajusta según sea necesario)
+    background-color: $light-success-30; // Cambia "your_color_here" por el color deseado
+    margin: 0 10px; // Margen horizontal para separar las barras verticales
+  }
+
   @include respond(tab-land) {
-      height: 95px;
+    height: 90px;
     .container {
       display: flex !important;
       justify-content: space-between !important;
@@ -81,40 +104,39 @@
       padding: 0;
       margin: 0;
       .navbar-collapse {
-        background-color: $light-success;        
+        height: 450px;
+        background-color: $light-success;
+        margin: 0;
+        padding: 0;
       }
     }
-    
+
     .brand-logo {
       display: none;
     }
     .brand-mobile {
       display: flex;
-      margin-left: 30px;
     }
     .navbar-toggler {
       font-size: 1.5rem;
-      margin-right: 2.2rem;
+      margin-right: 1.2rem;
+    }
+    .nav-dropDown {
+      flex-direction: column !important;
+      width: 100% !important;
+    }
+    .navItemsText {
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 40px;
+      border-radius: 10px; // Ajusta el valor según sea necesario para lograr las puntas redondas
+      &:hover {
+        border: 1px solid;
+        background-color: $light-success-30;
       }
-      .nav-dropDown {
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
-        margin-bottom: 20px;
-        padding: 0px;
-      }
-      .navItemsText {
-        margin-bottom: 10px;
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
-        font-size:2rem;
-        border-radius: 10px; // Ajusta el valor según sea necesario para lograr las puntas redondas
-        &:hover {
-          border: 1px solid;
-          background-color: $light-success-30;
-        }
-      }
+    }
 
       .row {
         display: flex;
@@ -155,17 +177,16 @@
 		border-radius: 100px;
 		bottom: 80px;
 		color: #fff;
+		height: 80px;
 		position: fixed;
 		right: 40px;
 		text-align: center;
-		height: 60px;
-		width: 60px;
+		width: 80px;
 		z-index: 100;
-		padding: 1.3rem;
+		padding: 0.8rem;
 		cursor: pointer;
-	
+	}
     }
-  }
   }
 
   
